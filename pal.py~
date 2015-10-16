@@ -10,6 +10,9 @@ def query():
     input_string = str(raw_input())
     if input_string == escape:
         keep_going = False
+    elif len(input_string) < 3:
+	print "Too few characters! I need at least three"
+        query()
     else:
         input_string = input_string.translate(None, punc)
 	return input_string.lower()
