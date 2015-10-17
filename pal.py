@@ -24,7 +24,7 @@ def is_palindrome(x):
         return False
 
 
-#Take the string, check if it's in the dictionary and add it and it's palindrome state if not.
+#Take the string, check if it's in the dictionary and add it and its palindrome state if not.
 def check_dict(x):
     if x not in pal_dict.keys():
         pal_dict[x] = is_palindrome(x)
@@ -39,5 +39,5 @@ def check_dict(x):
         print "Not a palindrome!"
 
 print "Welcome to the palindrome detector! Type !q to quit."
-while keep_going == True:
+while keep_going:
     check_dict(query())
